@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1088315929962",
+    "project_id": "coachingproject-e3f04",
+    "storage_bucket": "coachingproject-e3f04.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1088315929962:android:0ca2c37c1045c5c28e2113",
+        "android_client_info": {
+          "package_name": "com.example.coachingproject"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDRM8T5ig1OAtR3sd7sgonP1BSOcOwG7Tw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
