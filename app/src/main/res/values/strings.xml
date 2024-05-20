@@ -1,3 +1,16 @@
 <resources>
-    <string name="app_name">CoachingProject</string>
+    <string name="app_name">CoachingApp</string>
+    <string name="header_image">Header_Image</string>
+    <string name="coaching">Coaching</string>
+    <string name="account">Account</string>
+    <string name="log_out">Log Out</string>
+    <string name="others">OTHERS</string>
+    <string name="buy_courses">Buy Courses</string>
+    <string name="your_courses">Your Courses</string>
+    <string name="your_profile">Your profile</string>
+    <string name="back">back</string>
+    <string name="transaction">Pay the fees of the selected course to our Bkash account and enter
+    the transaction number below:   </string>
+    <string name="account2">ACCOUNT</string>
+
 </resources>

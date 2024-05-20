@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <item android:title="@string/account2">
+                <menu>
+                        <item
+                            android:icon="@drawable/baseline_account_circle_24"
+                            android:id="@+id/your_account_profile"
+                            android:title="@string/your_profile">
+                        </item>
+                        <item android:id="@+id/your_courses"
+                            android:icon="@drawable/baseline_menu_book_24"
+                            android:title="@string/your_courses">
+                        </item>
+
+                        <item android:id="@+id/buy_courses"
+                            android:icon="@drawable/baseline_loupe_24"
+                            android:title="@string/buy_courses">
+                        </item>
+                </menu>
+        </item>
+
+        <item android:title="@string/others">
+                <menu>
+                        <item android:id="@+id/log_out_drawer_item_id"
+                            android:icon="@drawable/baseline_logout_24"
+                            android:title="@string/log_out">
+                        </item>
+                </menu>
+        </item>
+
+</menu>
