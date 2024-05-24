@@ -13,6 +13,17 @@
         android:theme="@style/Theme.CoachingProject"
         tools:targetApi="31">
         <activity
+            android:name=".BranchDetails"
+            android:parentActivityName=".Branches"
+            android:exported="false" />
+        <activity
+            android:name=".Branches"
+            android:parentActivityName=".HomePage"
+            android:exported="false" />
+        <activity
+            android:name=".AboutUs"
+            android:exported="false" />
+        <activity
             android:name=".Transaction"
             android:exported="false" />
         <activity
@@ -26,6 +37,7 @@
             android:exported="false" />
         <activity
             android:name=".EnrolledCourses"
+            android:parentActivityName=".HomePage"
             android:exported="false" />
         <activity
             android:name=".BuyCourses"

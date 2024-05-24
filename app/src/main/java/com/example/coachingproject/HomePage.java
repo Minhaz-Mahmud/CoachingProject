@@ -26,7 +26,7 @@ import com.google.firebase.auth.FirebaseAuth;
 
 public class HomePage extends AppCompatActivity {
 
-    CardView profile,email,phone_us,about_us;
+    CardView branches,email,phone_us,about_us;
     Toolbar toolbar;
     DrawerLayout drawerLayout;
     NavigationView navigationView;
@@ -47,6 +47,10 @@ public class HomePage extends AppCompatActivity {
         drawerLayout=findViewById(R.id.drawerLayout);
         navigationView=findViewById(R.id.navigationView);
 
+        branches=findViewById(R.id.branches);
+        email=findViewById(R.id.email);
+        phone_us=findViewById(R.id.phone_us);
+        about_us=findViewById(R.id.about_us);
 
         navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
@@ -83,6 +87,52 @@ public class HomePage extends AppCompatActivity {
             }
         });
 
+        branches.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(HomePage.this,Branches.class));
+            }
+        });
+
+
+        email.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String recipientEmail = "coaching.academy@gmail.com";
+
+
+                String uriText = "mailto:" + Uri.encode(recipientEmail);
+
+
+                Uri uri = Uri.parse(uriText);
+
+                Intent emailIntent = new Intent(Intent.ACTION_VIEW, uri);
+                emailIntent.setPackage("com.google.android.gm"); // Gmail's package name
+
+                try {
+                    startActivity(emailIntent);
+                } catch (ActivityNotFoundException e) {
+                    Toast.makeText(HomePage.this, "Gmail is not installed.", Toast.LENGTH_SHORT).show();
+                }
+            }
+        });
+
+        phone_us.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(Intent.ACTION_DIAL);
+                intent.setData(Uri.parse("tel:123456789"));
+                startActivity(intent);
+            }
+        });
+        about_us.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(HomePage.this,AboutUs.class));
+            }
+        });
+
+
     }
 
     public boolean onCreateOptionsMenu(Menu menu){
@@ -111,6 +161,8 @@ public class HomePage extends AppCompatActivity {
         }
         return true;
     }
+
+
 
 
 
