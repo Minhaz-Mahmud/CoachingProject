@@ -35,7 +35,7 @@ public class Registration extends AppCompatActivity {
     EditText mName,mInstitution,mAddress,mPhone,mEmail,mPassword;
     Button mRegister;
     FirebaseAuth fAuth;
-    Integer x;
+    Integer x=0;
 
     private DatabaseReference mDatabase;
 
