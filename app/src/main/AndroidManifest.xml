@@ -6,20 +6,23 @@
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/coaching"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.CoachingProject"
         tools:targetApi="31">
         <activity
-            android:name=".BranchDetails"
-            android:parentActivityName=".Branches"
+            android:name=".MainActivity"
             android:exported="false" />
         <activity
+            android:name=".BranchDetails"
+            android:exported="false"
+            android:parentActivityName=".Branches" />
+        <activity
             android:name=".Branches"
-            android:parentActivityName=".HomePage"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName=".HomePage" />
         <activity
             android:name=".AboutUs"
             android:exported="false" />
@@ -28,6 +31,7 @@
             android:exported="false" />
         <activity
             android:name=".EditProfile"
+            android:parentActivityName=".Account"
             android:exported="false" />
         <activity
             android:name=".ChangePassword"
@@ -37,8 +41,8 @@
             android:exported="false" />
         <activity
             android:name=".EnrolledCourses"
-            android:parentActivityName=".HomePage"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName=".HomePage" />
         <activity
             android:name=".BuyCourses"
             android:exported="false" />
@@ -49,7 +53,8 @@
             android:name=".Registration"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+
+            android:name=".SplashScrean"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
