@@ -26,4 +26,11 @@ public class User {
         this.email = email;
         this.roll = roll;
     }
+
+
+    public String showUser(){
+        return "Name: " + name + "\nAddress: " + address + "\nPhone: " + phone + "\nEmail: " +
+                email + "\nRoll: " + roll;
+
+    }
 }
