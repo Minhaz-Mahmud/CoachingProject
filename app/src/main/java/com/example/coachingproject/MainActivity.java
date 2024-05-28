@@ -35,9 +35,16 @@ class login {
         return instance;
     }
 
-    void printDetails() {
+    public void set(String a,String b){
+        this.email=a;
+        this.password=b;
+    }
+
+
+    public String  printDetails() {
         System.out.println("Email: " + email);
         System.out.println("Password: " + password);
+        return  "Email: " + email+" Password: "+password;
     }
 }
 
